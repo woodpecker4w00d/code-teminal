@@ -1,6 +1,6 @@
 <body>
   <p>(function() {
-    // Create a button
+    (function() {
     var button = document.createElement('button');
     button.style.position = 'fixed';
     button.style.top = '0px';
@@ -11,8 +11,6 @@
     button.style.opacity = '0.5';
     button.innerHTML = '≡';
     document.body.appendChild(button);
-  
-    // Create an overlay
     var overlay = document.createElement('div');
     overlay.style.position = 'fixed';
     overlay.style.top = '0px';
@@ -24,8 +22,6 @@
     overlay.style.zIndex = '1000';
     overlay.style.display = 'none';
     document.body.appendChild(overlay);
-  
-    // Create a navbar
     var navbar = document.createElement('div');
     navbar.style.width = '599px';
     navbar.style.height = '30px';
@@ -34,8 +30,6 @@
     navbar.innerHTML = 'Nebula Mini';
     navbar.style.color = 'white';
     overlay.appendChild(navbar);
-  
-    // Create a close button
     var closeButton = document.createElement('button');
     closeButton.innerHTML = 'Close';
     closeButton.style.float = 'right';
@@ -54,7 +48,6 @@ hackButton.style.color = 'white';
 hackButton.style.float='right';
 hackButton.style.marginRight='10px';
 hackButton.onclick=function(){
-  // Put your code here
   javascript: (function () {
     var overlay = document.createElement("div");
     overlay.style.position = "absolute";
@@ -172,8 +165,6 @@ hackButton.onclick=function(){
 
 };
 navbar.appendChild(hackButton);
-  
-    // Create a copy button
     var copyButton = document.createElement('button');
     copyButton.innerHTML = 'Copy';
     copyButton.style.background = '#000C84FF';
@@ -181,7 +172,6 @@ navbar.appendChild(hackButton);
     copyButton.style.float = 'right';
     copyButton.style.marginRight = '10px';
     copyButton.onclick = function() {
-      // Create a new overlay
       var newOverlay = document.createElement('div');
       newOverlay.style.position = 'fixed';
       newOverlay.style.top = '0px';
@@ -192,8 +182,6 @@ navbar.appendChild(hackButton);
       newOverlay.style.border = '1px solid black';
       newOverlay.style.zIndex = '1000';
       document.body.appendChild(newOverlay);
-  
-      // Create a new navbar
       var newNavbar = document.createElement('div');
       newNavbar.style.width = '599px';
       newNavbar.style.height = '30px';
@@ -201,8 +189,6 @@ navbar.appendChild(hackButton);
       newNavbar.style.padding = '0px';
       newNavbar.innerHTML = 'Nebula Mini COPY';
       newOverlay.appendChild(newNavbar);
-  
-      // Create a new close button
       var newCloseButton = document.createElement('button');
       newCloseButton.innerHTML = 'Close';
       newCloseButton.style.float = 'right';
@@ -212,16 +198,12 @@ navbar.appendChild(hackButton);
         newOverlay.style.display = 'none';
       };
       newNavbar.appendChild(newCloseButton);
-  
-      // Create a new iframe
       var newIframe = document.createElement('iframe');
       newIframe.style.width = '100%';
       newIframe.style.height = '570px';
       newIframe.style.border = 'none';
       newIframe.src = 'https://woodpecker4w00d.github.io/Nebula-Mini/';
       newOverlay.appendChild(newIframe);
-  
-      // Add drag functionality to the new navbar
       var newStartX, newStartY, newStartLeft, newStartTop;
       newNavbar.addEventListener('mousedown', function(event) {
         newStartX = event.clientX;
@@ -243,8 +225,6 @@ navbar.appendChild(hackButton);
       }
     };
     navbar.appendChild(copyButton);
-
-   // Create a copy button
  var hackbutton = document.createElement('button');
  hackbutton.innerHTML = 'Copy';
 hackButton.style.background = '#000C84FF';
@@ -252,7 +232,6 @@ hackButton.style.color = 'white';
  hackbutton.style.float = 'right';
  hackbutton.style.marginRight = '10px';
  hackbutton.onclick = function() {
-   // Create a new overlay
    var hackoverlay = document.createElement('div');
    hackoverlay.style.position = 'fixed';
    hackoverlay.style.top = '0px';
@@ -263,8 +242,6 @@ hackButton.style.color = 'white';
    hackoverlay.style.border = '1px solid black';
    hackoverlay.style.zIndex = '1000';
    document.body.appendChild(hackoverlay);
-
-   // Create a new navbar
    var newNavbar = document.createElement('div');
    newNavbar.style.width = '599px';
    newNavbar.style.height = '30px';
@@ -272,8 +249,6 @@ hackButton.style.color = 'white';
    newNavbar.style.padding = '0px';
    newNavbar.innerHTML = 'Nebula Mini COPY';
    hackoverlay.appendChild(newNavbar);
-
-   // Create a new close button
    var newCloseButton = document.createElement('button');
    newCloseButton.innerHTML = 'Close';
     newCloseButton.style.background = '#000C84FF';
@@ -283,8 +258,6 @@ hackButton.style.color = 'white';
      hackoverlay.style.display = 'none';
    };
    newNavbar.appendChild(newCloseButton);
-
-   // Create a hack menu div
 var hackMenuDiv = document.createElement('div');
 hackMenuDiv.style.width = '100%';
 hackMenuDiv.style.height = '570px';
@@ -300,8 +273,6 @@ hackMenuDiv.innerHTML = `
   </ul>
 `;
 hackMenuOverlay.appendChild(hackMenuDiv);
-
-   // Create a new iframe
    var newIframe = document.createElement('iframe');
    newIframe.style.width = '100%';
    newIframe.style.height = '570px';
@@ -309,7 +280,6 @@ hackMenuOverlay.appendChild(hackMenuDiv);
    newIframe.src = 'https://woodpecker4w00d.github.io/Nebula-Mini/';
    hackoverlay.appendChild(newIframe);
 
-   // Add drag functionality to the new navbar
    var newStartX, newStartY, newStartLeft, newStartTop;
    newNavbar.addEventListener('mousedown', function(event) {
      newStartX = event.clientX;
@@ -331,16 +301,12 @@ hackMenuOverlay.appendChild(hackMenuDiv);
    }
  };
  navbar.appendChild(hackbutton);
-
-    // Create an iframe
     var iframe = document.createElement('iframe');
     iframe.style.width = '100%';
     iframe.style.height = '570px';
     iframe.style.border = 'none';
     iframe.src = 'https://woodpecker4w00d.github.io/Nebula-Mini/';
     overlay.appendChild(iframe);
-  
-    // Add drag functionality to the navbar
     var startX, startY, startLeft, startTop;
     navbar.addEventListener('mousedown', function(event) {
       startX = event.clientX;
